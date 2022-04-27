@@ -1,4 +1,4 @@
-/* Design of body,header,nav,main,menu,aside,footer*/
+
 body { margin: 0px; 
     font-family: Georgia; 
     width: auto;
@@ -13,7 +13,6 @@ body { margin: 0px;
     padding: 15px; 
 }
 
-/* Design of page button and menu*/
 .PageButton
 {
     width:100%;
@@ -28,7 +27,6 @@ body { margin: 0px;
     background-color: whitesmoke;
 }
 
-/* Design of topic*/
 .topic
 {
     width:100%;
@@ -47,8 +45,6 @@ body { margin: 0px;
     height: auto; 
     width: 100%; 
 }
-
-
 
 #menu { 
     order: 2;
@@ -78,8 +74,6 @@ body { margin: 0px;
     width: 100%; 
 }
 
-/* button to go back to main page*/
-
 #backmenu{ 
     order: 5;
     font-size: medium;
@@ -89,7 +83,6 @@ body { margin: 0px;
     flex-grow: 1;
 }
 
-/* Set place of img*/
 #header img { 
     float: left; 
     margin-right : 10px; 
@@ -107,14 +100,10 @@ body { margin: 0px;
     background-color:rgb(80, 255, 168)
 }
 
-/* responsive of the image which is on the left hand side in the middle*/
 .img-fluid{
     max-width:100%;
     height:auto;
 }
-
-/* responsive lay out of others*/
-
 
 @media only screen and (max-width: 1000px) {
     #nav { order: 4; width: 100px; }
@@ -123,8 +112,6 @@ body { margin: 0px;
     #menu { height: auto; background: #CFC; }
     #aside { order: 2; width: 100px; }
   }
-
-/* responsive lay out of others*/
 
 @media only screen and (max-width: 800px) {
     #nav { order: 4; width: 100%; }
