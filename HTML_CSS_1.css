@@ -1,0 +1,138 @@
+/* Design of body,header,nav,main,menu,aside,footer*/
+body { margin: 0px; 
+    font-family: Georgia; 
+    width: auto;
+    background-color: rgb(208, 255, 251);
+}
+
+#header, #nav, #main, #menu ,#aside, #footer { 
+    background: rgb(106, 220, 255); 
+    border: 1px solid black; 
+    border-radius: 8px; 
+    margin: 5px; 
+    padding: 15px; 
+}
+
+/* Design of page button and menu*/
+.PageButton
+{
+    width:100%;
+    font-size:1vw;
+    text-align: center;
+    float:left;
+    text-shadow:3px 4px 5px rgb(27, 130, 226);
+}
+.PageMenu
+{
+    width:100%;
+    background-color: whitesmoke;
+}
+
+/* Design of topic*/
+.topic
+{
+    width:100%;
+    font-size:large;
+    text-align: center;
+    text-shadow:3px 4px 5px rgb(142, 175, 238);
+}
+
+#flex-container { 
+    display: flex; 
+    flex-flow: row wrap; 
+}
+
+#header { 
+    order: 1;
+    height: auto; 
+    width: 100%; 
+}
+
+
+
+#menu { 
+    order: 2;
+    font-size: medium;
+    height: auto;
+    background: rgb(187, 223, 238);
+    width: 10px; 
+    flex-grow: 1;
+}
+
+#main { 
+    order: 3;
+    font-size: medium;
+    height: auto; 
+    background: rgb(104, 211, 253); 
+    width: 10px; 
+    flex-grow: 1; 
+}
+
+#aside { 
+    width: 2000px; 
+}
+
+#topic { 
+    order: 4;
+    height: 120px; 
+    width: 100%; 
+}
+
+/* button to go back to main page*/
+
+#backmenu{ 
+    order: 5;
+    font-size: medium;
+    height: auto;
+    background: rgb(72, 87, 221);
+    width: 100px; 
+    flex-grow: 1;
+}
+
+/* Set place of img*/
+#header img { 
+    float: left; 
+    margin-right : 10px; 
+}
+
+#header div { 
+    clear: none; 
+}
+
+.PageButton:hover{
+    background-color: rgb(90, 248, 201)
+}
+
+.PageButton:active{
+    background-color:rgb(80, 255, 168)
+}
+
+/* responsive of the image which is on the left hand side in the middle*/
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+
+/* responsive lay out of others*/
+
+
+@media only screen and (max-width: 1000px) {
+    #nav { order: 4; width: 100px; }
+    #RegisterButton { width:auto; height: auto; background: #CFC; }
+    #main { height: auto; background: #CFC; }
+    #menu { height: auto; background: #CFC; }
+    #aside { order: 2; width: 100px; }
+  }
+
+/* responsive lay out of others*/
+
+@media only screen and (max-width: 800px) {
+    #nav { order: 4; width: 100%; }
+    #nav ul { list-style: none; display: flex; flex-direction: row; 
+    justify-content: space-around; }
+    #RegisterButton { font-size:auto;width:auto; height: auto; background: #CFC; }
+    #main { font-size:auto; height: auto; background: rgb(71, 240, 175); }
+    #menu { height: auto; background: #CFC; }
+    aside { display: none; }
+}
+  
